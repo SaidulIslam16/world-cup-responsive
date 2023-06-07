@@ -1,3 +1,97 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    --button-bg: red;
+}
+
+/* Universal Style */
+
+.main-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+
+/* banner section */
+
+
+
+.banner {
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 130px;
+
+}
+
+.details {
+    color: white;
+    max-width: 513px;
+    margin-left: 110px;
+
+}
+
+.details h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+.main-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-img img {
+    height: 613px;
+}
+
+.live-button {
+    background-color: var(--button-bg);
+    padding: 16px 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* blog section */
+
+.blog-section {
+    display: flex;
+    column-gap: 24px;
+}
+
+.menu {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 252px;
+    max-height: 190px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.menu button {
+    padding: 17px 0;
+    border-radius: 10px;
+}
+
+.menu a {
+    font-size: 20px;
+    color: black;
+}
