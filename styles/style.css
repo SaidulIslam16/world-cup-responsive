@@ -138,6 +138,17 @@ h1 {
     gap: 20px;
 }
 
+.view-button {
+    padding: 10px 25px;
+    margin: 20px auto 0 auto;
+    width: fit-content;
+    background-color: var(--button-bg);
+    color: white;
+    border-radius: 5px;
+    display: none;
+
+}
+
 /* Footer style */
 
 footer {
@@ -149,6 +160,7 @@ footer {
 
 footer a {
     color: white;
+    text-align: center;
 }
 
 .footer-links {
@@ -161,7 +173,7 @@ footer a {
 
 @media screen and (min-width: 577px) and (max-width: 834px) {
     .main-container {
-        max-width: 734px;
+        margin: 0 30px;
     }
 
     .details h1 {
@@ -172,27 +184,59 @@ footer a {
         color: white;
         max-width: 513px;
         margin-left: 50px;
+        padding-bottom: 30px;
 
     }
 
     .main-img img {
-        height: 340px;
+        height: 350px;
+        /* position: absolute; */
+    }
+
+    .details p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* Number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     /* blog section */
 
     .blog-section {
         flex-direction: column;
+        margin-bottom: 50px;
     }
 
     .menu {
-        background-color: none;
-        padding: 30px;
+        background-color: white;
+        padding: 30px 0;
         border-radius: 10px;
-        width: 252px;
-        max-height: 190px;
+        width: 100%;
+        /* max-height: 190px; */
         display: flex;
-        /* flex-direction: column; */
-        row-gap: 10px;
+        flex-direction: row;
+        column-gap: 20px;
+
     }
+
+    .menu button {
+        padding: 17px 0;
+        width: 230px;
+        border-radius: 10px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog:nth-child(9) {
+        display: none;
+    }
+
+    .view-button {
+        display: block;
+    }
+
 }
