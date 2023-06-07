@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -22,6 +23,10 @@ button {
     border: none;
 }
 
+h1 {
+    font-size: 70px;
+}
+
 
 /* banner section */
 
@@ -32,7 +37,8 @@ button {
     border-radius: 30px;
     display: flex;
     align-items: center;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 
 }
 
@@ -74,6 +80,7 @@ button {
 .blog-section {
     display: flex;
     column-gap: 24px;
+    margin-bottom: 130px;
 }
 
 .menu {
@@ -93,7 +100,7 @@ button {
 }
 
 .menu a {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 
@@ -105,8 +112,18 @@ button {
     margin-right: 15px;
 }
 
+.blog {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.blog-detial-sect {
+    padding: 20px;
+}
+
 .blog-img img {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .transfer {
@@ -119,4 +136,63 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+/* Footer style */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-links {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 577px) and (max-width: 834px) {
+    .main-container {
+        max-width: 734px;
+    }
+
+    .details h1 {
+        font-size: 40px;
+    }
+
+    .details {
+        color: white;
+        max-width: 513px;
+        margin-left: 50px;
+
+    }
+
+    .main-img img {
+        height: 340px;
+    }
+
+    /* blog section */
+
+    .blog-section {
+        flex-direction: column;
+    }
+
+    .menu {
+        background-color: none;
+        padding: 30px;
+        border-radius: 10px;
+        width: 252px;
+        max-height: 190px;
+        display: flex;
+        /* flex-direction: column; */
+        row-gap: 10px;
+    }
 }
