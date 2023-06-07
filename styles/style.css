@@ -174,7 +174,91 @@ footer a {
     justify-content: space-around;
 }
 
-/* Responsive */
+
+/* Responsive for Mobile */
+
+@media screen and (max-width: 576px) {
+    .main-container {
+        margin: 0 20px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .details h1 {
+        font-size: 24px;
+    }
+
+    .details {
+        color: white;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 20px;
+
+    }
+
+    .main-img img {
+        height: 250px;
+        /* position: absolute; */
+    }
+
+    .details p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* Number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* blog section */
+
+    .blog-section {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        background-color: white;
+
+    }
+
+    .menu button {
+        padding: 17px 0;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid rgb(213, 213, 213);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog:nth-child(9) {
+        display: block;
+    }
+
+    .view-button {
+        display: none;
+    }
+
+    footer h1 {
+        font-size: 50px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+}
+
+/* Responsive for tablet */
 
 @media screen and (min-width: 577px) and (max-width: 834px) {
     .main-container {
